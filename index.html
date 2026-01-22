@@ -55,47 +55,49 @@
 
             <!-- Layout de contenido + sidebar -->
             <section aria-labelledby="titulo-resumen">
-                <header>
+                <header class="container">
                     <h2 id="titulo-resumen">Resumen rápido</h2>
                     <p>Una estructura típica para aplicar grid:
                         contenido principal + información adicional
                     </p>
                 </header>
 
-                <div>
-                    <!-- Columna principal -->
-                     <article aria-labelledby="titulo-historia">
-                        <h2 id="historia">Origen e historia</h2>
-                        <p>
-                            El husky siberiano se asocia con los pueblos
-                            nómadas de Siberia, quienes los utilizaban como
-                            perros de tracción para transportar mercancías
-                            y personas en condiciones extremas de clima.
-                        </p>
-                        <p>
-                            Su resistencia, velocidad y capacidad para
-                            trabajar en equipo los hicieron ideales para
-                            estas tareas. Con el tiempo, la raza fue
-                            llevada a otras partes del mundo, ganando
-                            popularidad como mascota y perro de trabajo.
-                        </p>
-                     </article>
+                <div class="container">
+                    <div class="row">
+                        <!-- Columna principal -->
+                        <article class="col-12 col-md-8" aria-labelledby="titulo-historia">
+                            <h2 id="historia">Origen e historia</h2>
+                            <p>
+                                El husky siberiano se asocia con los pueblos
+                                nómadas de Siberia, quienes los utilizaban como
+                                perros de tracción para transportar mercancías
+                                y personas en condiciones extremas de clima.
+                            </p>
+                            <p>
+                                Su resistencia, velocidad y capacidad para
+                                trabajar en equipo los hicieron ideales para
+                                estas tareas. Con el tiempo, la raza fue
+                                llevada a otras partes del mundo, ganando
+                                popularidad como mascota y perro de trabajo.
+                            </p>
+                        </article>
 
-                     <!-- Sidebar -->
-                    <aside aria-labelledby="titulo-ficha">
-                        <h3 id="titulo-ficha">Ficha técnica</h3>
-                        <ul>
-                            <li><strong>Tamaño:</strong>Mediano</li>
-                            <li><strong>Peso:</strong>20-27 kg</li>
-                            <li><strong>Energía:</strong>Alto</li>
-                            <li><strong>Pelaje:</strong>Doble capa de pelo</li>
-                        </ul>
+                        <!-- Sidebar -->
+                        <aside class="col-12 col-md-4" aria-labelledby="titulo-ficha">
+                            <h3 id="titulo-ficha">Ficha técnica</h3>
+                            <ul>
+                                <li><strong>Tamaño:</strong>Mediano</li>
+                                <li><strong>Peso:</strong>20-27 kg</li>
+                                <li><strong>Energía:</strong>Alto</li>
+                                <li><strong>Pelaje:</strong>Doble capa de pelo</li>
+                            </ul>
 
-                        <section aria-labelledby="titulo-dato">
-                            <h4 id="titulo-dato">Dato curioso</h4>
-                            <p>Suelen "hablar" en lugar de ladrar</p>
-                        </section>
-                    </aside>
+                            <section aria-labelledby="titulo-dato">
+                                <h4 id="titulo-dato">Dato curioso</h4>
+                                <p>Suelen "hablar" en lugar de ladrar</p>
+                            </section>
+                        </aside>
+                    </div>
                 </div>
             </section>
 
