@@ -20,14 +20,27 @@
 
             <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Navegación principal">
                <div class="container">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#historia">Historia </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto </a></li>
-                    </ul>
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Mostrar u ocultar menú"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuPrincipal"> 
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#historia">Historia </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#galeria">Galería </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#faq">FAQ </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto </a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
