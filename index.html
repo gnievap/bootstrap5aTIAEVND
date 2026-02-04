@@ -7,11 +7,26 @@
         <meta name="description" content="Aprende todo sobre el Husky Siberiano, 
         su historia, características y cuidados." />
         <link rel="stylesheet" href="/bootstrap-5.3.8/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="./styles/style.css" />  -->
+        <style>
+            :root {
+                --bs-primary: #6f42c1;    
+                --husky-blue: #00aaff;      
+            }
+            .transition {
+                transition: transform .2s ease, box-shadow .2s ease;
+            } 
+
+            .transition:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            } 
+        </style>
     </head>
 
     <body>
         <header>
-            <a href="#contenido" aria-label="Ir al contenido principal">
+            <a class="btn btn-outline-primary me-2 shadow-sm" href="#contenido" aria-label="Ir al contenido principal">
                 Ir al contenido principal</a>
             <div class="container">
                 <h1>Husky Siberiano</h1>
@@ -33,12 +48,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="menuPrincipal"> 
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#historia">Historia </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#galeria">Galería </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#faq">FAQ </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto </a></li>
+                            <li class="nav-item"><a href="#inicio" class="btn btn-primary me-2 shadow-sm">Inicio </a></li>
+                            <li class="nav-item"><a  href="#historia" class="btn btn-secondary me-2 shadow-sm">Historia </a></li>
+                            <li class="nav-item"><a  href="#caracteristicas" class="btn btn-success me-2 shadow-sm">Características </a></li>
+                            <li class="nav-item"><a  href="#galeria" class="btn btn-dark me-2 shadow-sm">Galería </a></li>
+                            <li class="nav-item"><a  href="#faq" class="btn btn-info me-2 shadow-sm">FAQ </a></li>
+                            <li class="nav-item"><a  href="#contacto" class="btn btn-danger me-2 shadow-sm">Contacto </a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,7 +153,7 @@
 
                     <div class="row g-3">
                         <article class="col-12 col-md-4">
-                            <div class="card h-100">
+                            <div class="card h-100 shadow-sm transition">
                                 <div class="card-body">
                                     <h3 class="card-title h5">Temperamento</h3>
                                     <p class="card-text">
@@ -148,7 +163,7 @@
                             </div>
                         </article >
                         <article class="col-12 col-md-4">
-                            <div class="card h-100">
+                            <div class="card h-100 shadow-sm transition">
                                 <div class="card-body">
                                     <h3 class="card-title h5">Actividad</h3>
                                     <p class="card-text">
@@ -158,7 +173,7 @@
                             </div>
                         </article>
                         <article class="col-12 col-md-4">
-                            <div class="card h-100">
+                            <div class="card h-100 shadow-sm transition">
                                 <div class="card-body">
                                     <h3 class="card-title h5">Convivencia</h3>
                                     <p class="card-text">
@@ -179,13 +194,17 @@
                     </header>
                     <div class="row g-3">
                         <figure class="col-12 col-sm-6 col-md-4">
-                            <img src="./img/husky_rojo.jpg" alt="Husky siberiano rojo">
+                            <img 
+                               src="./img/husky_rojo.jpg" 
+                               class="img-fluid rounded shadow-sm transition"
+                               alt="Husky siberiano rojo"
+                            >
                             <figcaption>Husky siberiano rojo.</figcaption>
                         </figure>
                         <figure class="col-12 col-sm-6 col-md-4">
                             <img src="./img/husky_tipico.jpg" 
                             alt="Husky siberiano negro"
-                            class="img-fluid rounded"
+                            class="img-fluid rounded shadow-sm transition"
                             >
                             <figcaption class="mt-2 text-center">
                                 Husky siberiano negro.
@@ -194,7 +213,7 @@
                         <figure class="col-12 col-sm-6 col-md-4">
                             <img src="./img/husky_blanco.jpg" 
                             alt="Husky siberiano blanco"
-                            class="img-fluid rounded"
+                            class="img-fluid rounded shadow-sm transition"
                             >
                             <figcaption class="mt-2 text-center">
                                 Husky siberiano blanco.
@@ -213,7 +232,7 @@
                         </h2>
                     </header>
 
-                    <details class="border rounded p-3 mb-3">
+                    <details class="border rounded p-3 mb-3 shadow-sm">
                         <summary class="fw-semibold">
                             ¿Esta raza es recomendable para principiantes?
                         </summary>
@@ -223,7 +242,7 @@
                         </p>
                     </details>
 
-                    <details class="border rounded p-3 mb-3">
+                    <details class="border rounded p-3 mb-3 shadow-sm">
                         <summary>
                             ¿Se adapta a departamentos pequeños?
                         </summary>
@@ -233,7 +252,7 @@
                         </p>
                     </details>
 
-                    <details class="border rounded p-3 mb-3">
+                    <details class="border rounded p-3 mb-3 shadow-sm">
                         <summary>
                             ¿Qué tanto tira pelo?
                         </summary>
